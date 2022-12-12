@@ -15,12 +15,12 @@ const CharacterList = () => {
     return (
 
 
-        <div className="container p-5 text-dark">
+        <div className="container p-md-5 p-1 text-dark">
             <h1 className='text-center text-white display-1 py-5'>Rick & Morty</h1>
-            <div  className='row p-5 bg-dark rounded '>
+            <div  className='row p-md-5 p-1 bg-dark rounded '>
                 {characters.map(character => {
                     return (
-                        <div key={character.id} className="col-12 bg-dark col-md-3">
+                        <div key={character.id} className="col-12 bg-dark col-lg-3">
                         <Character character={character} />
                         </div>
                     )
